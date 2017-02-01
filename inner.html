@@ -6,7 +6,7 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="main-header">
+		<header class="main-header clearfix">
 			<div class="container">
  				<div class="main-logo">
 					<img src="img/nerds-logo.png" width="160" height="65">
@@ -32,18 +32,18 @@
 				</div>
 			</div>
 		</header>
-		<main class="container">
+		<main class="container clearfix">
 			<div class="templates">
 				<h1>Магазин готовых шаблонов</h1>
 			</div>
-			<div class="search">
+			<div class="search clearfix">
 				<form action="https://echo.htmlacademy.ru" method="post">
 					<div class="search-item">
 						<p>Стоимость</p>
-						<input type="range"><br>
-						<label for="cost-from">от</label>
+						<input type="range" multiple><br>
+						<lebel for="cost-from">от</lebel>
 						<input type="text" id="cost-from" name="from">	
-						<label for="cost-before" name="before">до</label>
+						<lebel for="cost-before" name="before">до</lebel>
 						<input type="text" id="cost-before" name="before">
 					</div>
 					<div class="search-item">
@@ -91,31 +91,31 @@
 				<div class="sorting-options">
 					<ul>
 						<li class="by-price">
-							<a href="#">по цене
+							<a hres="#">по цене
 							</a>
 						</li>
 						<li class="by-type">
-							<a href="#">по типу
+							<a hres="#">по типу
 							</a>
 						</li>
 						<li class="by-name">
-							<a href="#">по названию
+							<a hres="#">по названию
 							</a>
 						</li>
 						<li class="by-bottom">
-							<a href="#">
+							<a hres="#">
 								<img src="img/sort-down.svg" width="9" height="9">по убыванию
 							</a>
 						</li>
 						<li class="by-top">
-							<a href="#">
+							<a hres="#">
 								<img src="img/sort-up.svg" width="9" height="9">по возрастанию
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="layout">
+			<div class="layout clearfix">
 				<div class="layout-item">
 					<div class="image-sedona">
 						<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
@@ -123,7 +123,7 @@
 					<div class="info-item">
 						<p class="name-layout">Sedona</p>
 						<p class="info-layout">Информационный сайт для туристов</p>
-						<a href="">9 900 руб.</a>
+						<button type="submit" value="order">9 900 руб.</button>
 					</div>
 				</div>
 				<div class="layout-item">
@@ -133,7 +133,7 @@
 					<div class="info-item">
 						<p class="name-layout">Pink app</p>
 						<p class="info-layout">Продуктивный лендинг приложения для ios и android</p>
-						<a href="#">9 900 руб.</a>
+						<button type="submit" value="order">9 900 руб.</button>
 					</div>
 				</div>
 				<div class="layout-item">
@@ -143,7 +143,7 @@
 					<div class="info-item">
 						<p class="name-layout">Barbershop</p>
 						<p class="info-layout">Сайт салона красоты. Для мужчин, да.</p>
-						<a href="#">9 900 руб.</a>
+						<button type="submit" value="order">9 900 руб.</button>
 					</div>
 				</div>
 				<div class="layout-item">
@@ -153,7 +153,7 @@
 					<div class="info-item">
 						<p class="name-layout">Mishka</p>
 						<p class="info-layout">Интернет-магазин вязанных игрушек</p>
-						<a href="#">9 900 руб.</a>
+						<button type="submit" value="order">9 900 руб.</button>
 					</div>
 				</div>
 				<div class="layout-item">
@@ -163,7 +163,7 @@
 					<div class="info-item">
 						<p class="name-layout">A Plus</p>
 						<p class="info-layout">Лендинг курсов повышения квалификации</p>
-						<a href="#">9 900 руб.</a>
+						<button type="submit" value="order">9 900 руб.</button>
 					</div>
 				</div>
 				<div class="layout-item">
@@ -173,7 +173,7 @@
 					<div class="info-item">
 						<p class="name-layout">Кваст</p>
 						<p class="info-layout">Промо-сайт производителя крафтового кваса</p>
-						<a href="#">9 900 руб.</a>
+						<button type="submit" value="order">9 900 руб.</button>
 					</div>
 				</div>
 				<div class="pages">
@@ -184,7 +184,7 @@
 				</div>
 			</div>
 		</main>
-		<footer class="main-footer">
+		<footer class="main-footer clearfix">
 			<div class="footer-map">
 				<div class="checkbox">
 					<img src="img/map-marker.png" width="231" height="190">
@@ -194,14 +194,14 @@
 					<p class="address">
 					191186, Санкт-Петербург<br>
 					ул. Б. Конюшенная, д. 19/8</p>
-					<p class="number">тел. +7 (812) 275-75-75</p>
+					<p clas="number">тел. +7 (812) 275-75-75</p>
 					<a class="btn" href="#">Напишите нам</a>
 				</div>
 			</div>
 			<section class="footer-social">
-          		<a class="social-btn social-btn-vk" href="#"></a>
-          		<a class="social-btn social-btn-fb" href="#"></a>
-          		<a class="social-btn social-btn-inst" href="#"></a>
+          		<a class="social-btn social-btn-vk" href="#">VK</a>
+          		<a class="social-btn social-btn-fb" href="#">FB</a>
+          		<a class="social-btn social-btn-inst" href="#">Insta</a>
         	</section>
         	<section class="footer-benefit">
         		<h3>Давайте дружить, это выгодно!</h3>

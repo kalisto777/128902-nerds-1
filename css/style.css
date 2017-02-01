@@ -12,3 +12,318 @@ h1 {
 	font-size: 55px;
 	line-height: 55px;
 }
+
+/*общие свойства*/
+
+.clearfix::after {
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+
+.container {
+  	width: 1200px;
+  	margin: 0 auto;
+  	padding: 0;
+  	padding-left: 20px;
+  	padding-right: 25px;
+}
+
+
+.main-logo {
+	float: left;
+ 	width: 180px;
+	margin-right: 130px;
+}
+
+.main-logo img {
+	width: 160px;
+	height: 65px;
+	padding-top: 49px;
+	padding-bottom: 4px;
+	opacity: 1;
+}
+
+.main-logo img:hover {
+  opacity: 0.8;
+}
+
+.main-navigation {
+  	float: left;
+  	width: 660px;
+}
+
+.main-navigation ul{
+	margin: 0;
+	padding: 0;
+}
+
+.main-navigation li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.main-navigation a {
+	display: block;
+	padding-top: 75px; 
+	padding-right: 21px;
+	padding-bottom: 17px;
+	padding-left: 21px;
+}
+
+.main-basket {
+  	float: right;
+  	max-width: 160px;
+}
+
+.basket {
+	position: relative;
+  	display: inline-block;
+  	padding-top: 75px;
+  	padding-bottom: 17px;
+  	padding-left: 20px;	
+}
+
+/*index.html*/
+
+.news {
+	margin-bottom: 83px;
+}
+
+.description-news {
+	float: left;
+ 	width: 400px;
+ 	margin-top: 75px;
+}
+
+.image-news {
+	float: right;
+	width: 760px;
+	min-height: 431px;
+}
+
+.services {
+  	margin-bottom: 81px;
+}
+
+.services-item {
+ 	float: left;
+	width: 300px;
+	min-height: 147px;
+	margin-right: 100px;
+}
+
+.services-item:last-child {
+  	margin-right: 0;
+}
+
+.services-description p {
+	padding-right: 56px;
+}
+
+.about-us {
+	margin-bottom: 77px;
+	margin-top: 42px;
+}
+
+.who-are-we {
+	float: left;
+	width: 700px;
+}
+ 
+.who-are-we p b {
+	display: block;
+	font-size: 45px;
+	line-height: 45px;
+	margin-top: 37px;
+	margin-bottom: 32px;
+}
+
+.principles-item p {
+	display: block;
+	padding-right: 115px;
+	margin-bottom: 44px;
+}
+
+.design {
+	display: block;
+}
+
+.design p {
+	margin-bottom: 29px;
+}
+
+.design li {
+	margin-bottom: 27px;
+}
+
+.interest {
+	float: right;
+	width: 360px;
+	/*margin-top:;*/
+}
+
+.interest .logo {
+	width: 360px;
+	min-height: 208px;
+}
+
+.accuracy-item {
+	display: block;
+	margin-top: 36px;
+	margin-bottom: 45px;
+}
+
+.percent {
+	float: left;
+	width: 120px;
+}
+
+.partners {
+	margin-bottom: 81px;
+}
+
+.partners-item {
+	display: inline-block;
+	width: 260px;
+	margin-right: 40px;6
+}
+
+.partners-item:last-child {
+	margin-right: 0px;
+}
+
+.btn {
+	display: inline-block;
+  	padding: 15px 45px;
+  	border: none;
+}
+
+
+/*inner.html*/
+
+.templates {
+	min-height: 236px;
+}
+
+h1 {
+	margin: 0;
+	/*vertical-align: middle;*/
+}
+
+.search {
+	float: left;
+	margin-top: 60px;
+	width: 260px;
+}
+
+.sorting {
+	float: right;
+	width: 760px;
+	margin-top: 60px;
+}
+
+.layout {
+	float: right;
+	width: 760px;
+}
+
+.layout-item {
+	float: left;
+	width: 360px;
+	min-height: 616px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
+
+.layout-item:nth-child(2),
+.layout-item:nth-child(4),
+.layout-item:nth-child(6) {
+	margin-right: 0;
+}
+
+.pages {
+	float: left;
+	width: 760px;
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+
+/*общие свойства*/
+
+.main-footer {
+	width: 1200px;
+}
+
+.footer-map {
+	position: relative;
+	left: -140px;
+	width: 1440px;
+	height: 416px;
+	margin-bottom: 70px;
+}
+
+.checkbox {
+	position: absolute;
+	top: 90px;
+	left: 820px;
+	width: 231px;
+	height: 190px;
+}
+
+.map-contact {
+	position: absolute;
+	top: 56px;
+	left: 140px;
+	width: 276px;
+	height: 310px;
+	padding-left: 44px;
+}
+
+.map-contact,
+.footer-social {
+	margin-left: 20px;
+}
+
+.map-contact .name {
+  	padding-top: 50px;
+}
+
+.footer-social {
+  	float: left;
+ 	width: 260px;
+	margin-right: 130px;
+	margin-bottom: 70px;
+}
+
+.social-btn {
+	display: inline-block;
+	width: 78px;
+	height: 78px;
+	border-radius: 39px;
+	margin-right: 0 10px;
+}
+
+.social-btn:last-child {
+	margin: 0;
+}
+
+.footer-benefit {
+	float: left;
+	width: 560px;	
+}
+
+.footer-benefit h3 {
+	font-size: 36px;
+  	line-height: 36px;
+  	font-weight: bold;
+  	margin: 0;
+}
+
+.footer-benefit p {
+	font-size: 16px;
+  	line-height: 22px;
+  	color: #444444;
+  	margin: 0;
+  	padding-top: 10px;
+}
