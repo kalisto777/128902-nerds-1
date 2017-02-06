@@ -1,11 +1,11 @@
-body {
+ body {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: normal;
-	font-family: "Roboto, Arial, sans-serif";
-	min-width: 1240px;
+	font-family: "Roboto", "Arial", sans-serif;
+	min-width: 1200px;
 	color: #000000;
-	background: #ffffff;
+	background-color: #ffffff;
 }
 
 h1 {
@@ -21,54 +21,75 @@ h1 {
   	clear: both;
 }
 
-.container {
-  	width: 1200px;
+.main-header {
   	margin: 0 auto;
   	padding: 0;
   	padding-left: 20px;
-  	padding-right: 25px;
+  	padding-right: 20px;
+  	color: #000000;
+	background-color: #eeeeee;
 }
-
 
 .main-logo {
 	float: left;
- 	width: 180px;
-	margin-right: 130px;
+ 	width: 160px;
+	margin-right: 140px;
 }
 
 .main-logo img {
 	width: 160px;
 	height: 65px;
-	padding-top: 49px;
-	padding-bottom: 4px;
+	padding-top: 48px;
+	padding-bottom: 18px;
 	opacity: 1;
 }
 
 .main-logo img:hover {
-  opacity: 0.8;
+  	opacity: 0.8;
+}
+
+.main-logo img:active {
+  	opacity: 0.3;
 }
 
 .main-navigation {
   	float: left;
   	width: 660px;
+  	text-transform: uppercase;
 }
 
 .main-navigation ul{
 	margin: 0;
 	padding: 0;
+	list-style: none;
+	line-height: 0;
 }
 
 .main-navigation li {
 	display: inline-block;
 	vertical-align: top;
+  	line-height: 30px;
 }
 
 .main-navigation a {
 	display: block;
 	padding-top: 75px; 
-	padding-right: 21px;
-	padding-bottom: 17px;
-	padding-left: 21px;
+	padding-left: 60px;
+	padding-bottom: 28px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.main-navigation a:hover {
+  	color: #fb565a;
+}
+
+/*.main-navigation a:visited {
+  	text-decoration: underline;
+}*/
+
+.main-navigation a:active {
+  	color: #ababab;
 }
 
 .main-basket {
@@ -79,37 +100,95 @@ h1 {
 .basket {
 	position: relative;
   	display: inline-block;
+  	vertical-align: top;
   	padding-top: 75px;
-  	padding-bottom: 17px;
-  	padding-left: 20px;	
+  	padding-bottom: 28px;
+  	padding-left: 80px;	
+  	list-style: none;
+  	line-height: 30px;
+  	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.main-basket .basket:hover {
+  	color: #fb565a;
+}
+
+/*.main-basket .basket:visited {
+  	text-decoration: underline;
+}*/
+
+.main-basket .basket:active {
+  	color: #ababab;
+}
+
+.basket::before {
+  	content: "";
+  	position: absolute;
+  	top: 81px;
+  	left: 45px;
+  	width: 15px;
+  	height: 15px;
+  	background-color: red;
+  	opacity: 1;
+}
+
+.btn {
+	display: inline-block;
+  	padding: 15px 45px;
+  	font-weight: normal;
+  	font-size: 16px;
+  	line-height: 18px;
+  	font-family: "Roboto Medium";
+  	vertical-align: top;
+  	text-align: center;
+  	color: #ffffff;
+  	text-transform: uppercase;
+  	text-decoration: none;
+  	background-color: #fb565a;
+  	border: none;
+  	border-radius: 2px;
+  	cursor: pointer;
+}
+
+.btn:hover {
+  	background-color: #e74246;
 }
 
 /*index.html*/
 
 .news {
-	margin-bottom: 83px;
+	padding-left: 20px;
+  	padding-right: 20px;
+	margin-bottom: 81px;
+	color: #000000;
+  	background-color: #eeeeee;
 }
 
 .description-news {
 	float: left;
  	width: 400px;
- 	margin-top: 75px;
+ 	margin-top: 68px;
 }
 
 .image-news {
 	float: right;
-	width: 760px;
-	min-height: 431px;
+	width: 698px;
+	min-height: 413px;
+	margin-right: 31px;
 }
 
 .services {
   	margin-bottom: 81px;
+  	padding-left: 20px;
+  	padding-right: 20px;
 }
 
 .services-item {
  	float: left;
 	width: 300px;
-	min-height: 147px;
+	min-height: 146px;
 	margin-right: 100px;
 }
 
@@ -117,13 +196,20 @@ h1 {
   	margin-right: 0;
 }
 
+.services-description .services-name {
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
 .services-description p {
 	padding-right: 56px;
 }
 
 .about-us {
-	margin-bottom: 77px;
-	margin-top: 42px;
+	padding-left: 20px;
+	margin-bottom: 75px;
+	margin-top: 41px;
 }
 
 .who-are-we {
@@ -135,13 +221,13 @@ h1 {
 	display: block;
 	font-size: 45px;
 	line-height: 45px;
-	margin-top: 37px;
-	margin-bottom: 32px;
+	margin-top: 39px;
+	margin-bottom: 35px;
 }
 
 .principles-item p {
 	display: block;
-	padding-right: 115px;
+	padding-right: 80px;
 	margin-bottom: 44px;
 }
 
@@ -150,17 +236,20 @@ h1 {
 }
 
 .design p {
+	text-transform: uppercase;
 	margin-bottom: 29px;
+	font-weight: bold;
 }
 
 .design li {
+	color: #fb565a;
 	margin-bottom: 27px;
 }
 
 .interest {
 	float: right;
 	width: 360px;
-	/*margin-top:;*/
+  	padding-right: 20px;
 }
 
 .interest .logo {
@@ -170,13 +259,27 @@ h1 {
 
 .accuracy-item {
 	display: block;
+	text-transform: uppercase;
 	margin-top: 36px;
 	margin-bottom: 45px;
+	font-weight: bold;
 }
 
 .percent {
 	float: left;
 	width: 120px;
+}
+
+.percent h2 {
+	font-size: 45px;
+	line-height: 10.06px;
+	font-weight: bold;
+}
+
+.percent p {
+	font-family: "Roboto Regular";
+	font-size: 16px;
+	line-height: 18px;
 }
 
 .partners {
@@ -186,41 +289,123 @@ h1 {
 .partners-item {
 	display: inline-block;
 	width: 260px;
-	margin-right: 40px;6
+	margin-right: 20px;
+	margin-left: 20px;
+	text-align: center;
 }
 
-.partners-item:last-child {
-	margin-right: 0px;
+
+
+.services-item:nth-child(2) .btn {
+	background-color: #00ca74;
 }
 
-.btn {
-	display: inline-block;
-  	padding: 15px 45px;
-  	border: none;
+.services-item:nth-child(2) .btn:hover {
+  	background-color: #00bc6c;
 }
 
+.services-item:nth-child(3) .btn {
+	background-color: #efc84a;
+}
+
+.services-item:nth-child(3) .btn:hover {
+  	background-color: #eab534;
+}
 
 /*inner.html*/
 
+.main-navigation .shops {
+  	text-decoration: underline;
+	color: #fb565a;
+}
+
+
 .templates {
-	min-height: 236px;
+	min-height: 241px;
+	margin-bottom: 61px;
+	color: #000000;
+  	background-color: #eeeeee;
 }
 
-h1 {
+.templates h1 {
 	margin: 0;
-	/*vertical-align: middle;*/
+	text-align: center;
+	font-size: 55px;
+	line-height: 241px;
 }
 
+/*поиск*/
 .search {
 	float: left;
-	margin-top: 60px;
 	width: 260px;
+	padding-left: 20px;
+  	padding-right: 20px;
+}
+ .search-price {
+ 	margin-bottom: 56px;
+ }
+
+.search-grid{
+	margin-bottom: 44px;
+}
+
+.search-features {
+	margin-bottom: 50px;
+}
+
+.search p,
+.layout-item .name-layout {
+	font-size: 18px;
+  	line-height: 30px;
+  	text-transform: uppercase;
+  	font-weight: bold;
+}
+
+.search .net-item,
+.search label,
+.info-item .info-layout {
+	font-size: 16px;
+  	line-height: 20px;
 }
 
 .sorting {
 	float: right;
 	width: 760px;
-	margin-top: 60px;
+	background-color: #f0c2d1;
+}
+
+/*сортировка*/
+.sort {
+	margin-right: 40px;
+	width: 360px;
+	text-align: left;
+	font-size: 18px;
+  	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.sorting-options {
+	width: 360px;
+}
+
+.sorting-options ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 0;
+}
+
+.sorting-options li {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 14px;
+  	line-height: 18px;
+	vertical-align: top;
+}
+
+.by-top {
+	opacity: 0.3;
 }
 
 .layout {
@@ -230,8 +415,9 @@ h1 {
 
 .layout-item {
 	float: left;
+	position: relative;
 	width: 360px;
-	min-height: 616px;
+	min-height: 576px;
 	margin-right: 40px;
 	margin-bottom: 40px;
 }
@@ -242,6 +428,51 @@ h1 {
 	margin-right: 0;
 }
 
+.layout-item .image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.layout-item .info-item {
+	position: absolute;
+	top: 346px;
+	width: 360px;
+	min-height: 232px;
+	text-align: center;
+	background: #eeeeee;
+	z-index: 1;
+	/*visibility: hidden;*/
+}
+
+.layout-item .name-layout {
+	padding-top: 30px;
+	font-size: 18px;
+  	line-height: 30px;
+  	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.layout-item .info-layout{
+	font-size: 16px;
+  	line-height: 18px;
+}
+
+.info-item .btn {
+	padding: 0;
+	padding: 20px 62px;
+}
+
+.layout-item .image:hover {
+	z-index: 0;
+}
+
+/*.layout-item .info-item:hover {
+	visibility: visible;
+}*/
+
+/* страницы*/
 .pages {
 	float: left;
 	width: 760px;
@@ -249,11 +480,37 @@ h1 {
 	margin-bottom: 60px;
 }
 
-/*общие свойства*/
-
-.main-footer {
-	width: 1200px;
+.pages a {
+	display: inline-block;
+	min-width: 46px;
+    height: 46px;
+    margin-right: 11px;
+    line-height: 46px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+	text-transform: uppercase;
+    color: #000000;
+    background: #eeeeee;
+    border: 3px solid #eeeeee;
+    border-radius: 3px;
 }
+
+.pages a:first-child {
+	background: #ffffff;
+}
+
+.pages a:hover {
+	background: #dfdfdf;
+	border-color: #dfdfdf;
+}
+
+.pages a:last-child {
+	width: 260px;
+}
+
+
+/*общие свойства*/
 
 .footer-map {
 	position: relative;
@@ -261,6 +518,8 @@ h1 {
 	width: 1440px;
 	height: 416px;
 	margin-bottom: 70px;
+	background-size: 100%;
+	background: #eeeeee url("../img/map.png") no-repeat center top;
 }
 
 .checkbox {
@@ -278,6 +537,8 @@ h1 {
 	width: 276px;
 	height: 310px;
 	padding-left: 44px;
+	color: #000000;
+	background-color: #ffffff;
 }
 
 .map-contact,
@@ -286,7 +547,18 @@ h1 {
 }
 
 .map-contact .name {
+	font-size: 18px;
+  	line-height: 30px;
+  	font-weight: bold;
   	padding-top: 50px;
+	text-transform: uppercase;
+}
+
+.map-contact .adress,
+.map-contact .number {
+	font-size: 16px;
+  	line-height: 18px;
+  	color: #666666;
 }
 
 .footer-social {
@@ -302,10 +574,36 @@ h1 {
 	height: 78px;
 	border-radius: 39px;
 	margin-right: 0 10px;
+	font-size: 0;
+  	vertical-align: top;
+  	text-decoration: none;
+	background-color: #e1e1e1;
 }
 
 .social-btn:last-child {
 	margin: 0;
+}
+
+.social-btn:hover {
+  	background-color: #e74246;
+}
+
+.social-btn-vk {
+  	background-image: url("../img/vk-icon.png");
+  	background-repeat: no-repeat; 
+  	background-position: center;
+}
+
+.social-btn-fb {
+  	background-image: url("../img/fb-icon.png");
+  	background-repeat: no-repeat; 
+  	background-position: center;
+}
+
+.social-btn-inst {
+  	background-image: url("../img/insta-icon.png");
+  	background-repeat: no-repeat; 
+  	background-position: center;
 }
 
 .footer-benefit {

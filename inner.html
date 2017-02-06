@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Nerd'S</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header clearfix">
-			<div class="container">
  				<div class="main-logo">
 					<img src="img/nerds-logo.png" width="160" height="65">
 				</div>
@@ -30,7 +31,6 @@
 				<div class="main-basket">
 					<a class="basket" href="#">Корзина</a>
 				</div>
-			</div>
 		</header>
 		<main class="container clearfix">
 			<div class="templates">
@@ -38,7 +38,7 @@
 			</div>
 			<div class="search clearfix">
 				<form action="https://echo.htmlacademy.ru" method="post">
-					<div class="search-item">
+					<div class="search-price">
 						<p>Стоимость</p>
 						<input type="range" multiple><br>
 						<lebel for="cost-from">от</lebel>
@@ -46,7 +46,7 @@
 						<lebel for="cost-before" name="before">до</lebel>
 						<input type="text" id="cost-before" name="before">
 					</div>
-					<div class="search-item">
+					<div class="search-grid">
 						<p>Сетка</p>
 						<div class="net-item">
 							<label>
@@ -67,7 +67,7 @@
             		 		</label>
             		 	</div>
 					</div>
-					<div class="search-item">
+					<div class="search-features">
 						<p>Особенности</p>
 					 	<input type="checkbox" name="slider" id="slider-field" checked>
 					 		<label for="slider-field">Слайдер</label><br>
@@ -86,7 +86,7 @@
 			</div>
 			<div class="sorting">
 				<div class="sort">
-					<p>Сортировать</p>
+					<p>Сортировать:</p>
 				</div>
 				<div class="sorting-options">
 					<ul>
@@ -104,12 +104,12 @@
 						</li>
 						<li class="by-bottom">
 							<a hres="#">
-								<img src="img/sort-down.svg" width="9" height="9">по убыванию
+								<img src="img/sort-down.png" width="9" height="9">
 							</a>
 						</li>
 						<li class="by-top">
 							<a hres="#">
-								<img src="img/sort-up.svg" width="9" height="9">по возрастанию
+								<img src="img/sort-up.png" width="9" height="9">
 							</a>
 						</li>
 					</ul>
@@ -117,63 +117,63 @@
 			</div>
 			<div class="layout clearfix">
 				<div class="layout-item">
-					<div class="image-sedona">
+					<div class="image">
 						<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
 					</div>
 					<div class="info-item">
 						<p class="name-layout">Sedona</p>
-						<p class="info-layout">Информационный сайт для туристов</p>
-						<button type="submit" value="order">9 900 руб.</button>
+						<p class="info-layout">Информационный сайт<br> для туристов</p>
+						<a class="btn" href="#">9 900 руб.</a>
 					</div>
 				</div>
 				<div class="layout-item">
-					<div class="image-pink">
+					<div class="image">
 						<img src="img/img-pink.jpg" width="360" height="576" alt="Pink app">
 					</div>
 					<div class="info-item">
 						<p class="name-layout">Pink app</p>
-						<p class="info-layout">Продуктивный лендинг приложения для ios и android</p>
-						<button type="submit" value="order">9 900 руб.</button>
+						<p class="info-layout">Продуктивный лендинг<br> приложения для ios и android</p>
+						<a class="btn" href="#">9 900 руб.</a>
 					</div>
 				</div>
 				<div class="layout-item">
-					<div class="image-barbershop">
+					<div class="image">
 						<img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
 					</div>
 					<div class="info-item">
 						<p class="name-layout">Barbershop</p>
-						<p class="info-layout">Сайт салона красоты. Для мужчин, да.</p>
-						<button type="submit" value="order">9 900 руб.</button>
+						<p class="info-layout">Сайт салона красоты.<br> Для мужчин, да.</p>
+						<a class="btn" href="#">9 900 руб.</a>
 					</div>
 				</div>
 				<div class="layout-item">
-					<div class="image-mishka">
+					<div class="image">
 						<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
 					</div>
 					<div class="info-item">
 						<p class="name-layout">Mishka</p>
-						<p class="info-layout">Интернет-магазин вязанных игрушек</p>
-						<button type="submit" value="order">9 900 руб.</button>
+						<p class="info-layout">Интернет-магазин<br> вязанных игрушек</p>
+						<a class="btn" href="#">9 900 руб.</a>
 					</div>
 				</div>
 				<div class="layout-item">
-					<div class="image-a-plus">
+					<div class="image">
 						<img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
 					</div>
 					<div class="info-item">
 						<p class="name-layout">A Plus</p>
-						<p class="info-layout">Лендинг курсов повышения квалификации</p>
-						<button type="submit" value="order">9 900 руб.</button>
+						<p class="info-layout">Лендинг курсов<br> повышения квалификации</p>
+						<a class="btn" href="#">9 900 руб.</a>
 					</div>
 				</div>
 				<div class="layout-item">
-					<div class="image-kvast">
+					<div class="image">
 						<img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
 					</div>
 					<div class="info-item">
 						<p class="name-layout">Кваст</p>
-						<p class="info-layout">Промо-сайт производителя крафтового кваса</p>
-						<button type="submit" value="order">9 900 руб.</button>
+						<p class="info-layout">Промо-сайт производителя<br> крафтового кваса</p>
+						<a class="btn" href="#">9 900 руб.</a>
 					</div>
 				</div>
 				<div class="pages">
