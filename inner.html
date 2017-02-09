@@ -15,17 +15,17 @@
 				</div>
 				<nav class="main-navigation">
 					<ul class="main-list">
-						<li class="main-studio">
-							<a class="studio" href="#">Студия</a>
+						<li>
+							<a href="#">Студия</a>
 						</li>
-						<li class="main-clients">
-							<a class="clients" href="#">Клиенты</a>
+						<li>
+							<a href="#">Клиенты</a>
 						</li>
-						<li class="main-shops">
-							<a class="shops1" href="#">Магазин</a>
+						<li class="active">
+							<a>Магазин</a>
 						</li>
-						<li class="main-contacts">
-							<a class="contacts" href="#">Контакты</a>
+						<li>
+							<a href="#">Контакты</a>
 						</li>
 					</ul>
 				</nav>
@@ -40,9 +40,9 @@
 					<h1>Магазин готовых шаблонов</h1>
 				</div>
 				<div class="search clearfix">
-					<form action="https://echo.htmlacademy.ru" method="post">
+					<form action="https://echo.htmlacademy.ru" method="get ">
 						<div class="search-price">
-							<p>Стоимость</p>
+							<p>Стоимость:</p>
 							<input type="range" multiple><br>
 							<lebel for="cost-from">от</lebel>
 							<input type="text" id="cost-from" name="from">	
@@ -50,28 +50,18 @@
 							<input type="text" id="cost-before" name="before">
 						</div>
 						<div class="search-grid">
-							<p>Сетка</p>
+							<p>Сетка:</p>
 							<div class="net-item">
-								<label>
-	                				<input type="radio" name="net-group" value="adaptive" checked>
-	                				Адаптивная
-	            		 		</label>
-	            		 	</div>
-	            		 	<div class="net-item">
-	            		 		<label>
-	               					<input type="radio" name="net-group" value="fixed">
-	                				Фиксированная
-	            		 		</label>
-	            		 	</div>
-	            		 	<div class="net-item">
-	            		 		<label>
-	               					<input type="radio" name="net-group" value="rubber">
-	                				Резиновая
-	            		 		</label>
+	                			<input type="radio" name="net-group" value="adaptive" id="adapt" checked>
+	                				<label for="adapt">Адаптивная</label>	
+	               				<input type="radio" name="net-group" value="fixed" id="fix">
+	                				<label for="fix">Фиксированная</label>
+								<input type="radio" name="net-group" value="rubber" id="rub">
+	                				<label for="rub">Резиновая</label>
 	            		 	</div>
 						</div>
 						<div class="search-features">
-							<p>Особенности</p>
+							<p>Особенности:</p>
 						 	<input type="checkbox" name="slider" id="slider-field" checked>
 						 		<label for="slider-field">Слайдер</label><br>
 						 	<input type="checkbox" name="benefits-unit" id="benefits-unit-field">
@@ -89,31 +79,27 @@
 				</div>
 			</div>
 			<div class="sorting">
-				<div class="wrapper">
+				<div class="wrapper clearfix">
 					<div class="sort">
 						<p>Сортировать:</p>
 					</div>
 					<div class="sorting-options">
 						<ul>
 							<li class="by-price">
-								<a hres="#">по цене
-								</a>
-							</li>
-							<li class="by-type">
-								<a hres="#">по типу
+								<a href="#">по цене
 								</a>
 							</li>
 							<li class="by-name">
-								<a hres="#">по названию
+								<a href="#">по названию
 								</a>
 							</li>
 							<li class="by-bottom">
-								<a hres="#">
+								<a href="#">
 									<img src="img/sort-down.png" width="9" height="9">
 								</a>
 							</li>
 							<li class="by-top">
-								<a hres="#">
+								<a href="#">
 									<img src="img/sort-up.png" width="9" height="9">
 								</a>
 							</li>
