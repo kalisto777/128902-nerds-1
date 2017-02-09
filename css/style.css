@@ -15,6 +15,11 @@ h1 {
 
 /*общие свойства*/
 
+.main-header .container {
+	width: 1160px;
+	margin: 0 auto;
+}
+
 .clearfix::after {
   	content: "";
   	display: table;
@@ -73,9 +78,9 @@ h1 {
 
 .main-navigation a {
 	display: block;
-	padding-top: 75px; 
-	padding-left: 60px;
-	padding-bottom: 28px;
+	margin-top: 75px; 
+	margin-left: 50px;
+	margin-bottom: 28px;
 	color: #000000;
 	text-decoration: none;
 }
@@ -83,10 +88,6 @@ h1 {
 .main-navigation a:hover {
   	color: #fb565a;
 }
-
-/*.main-navigation a:visited {
-  	text-decoration: underline;
-}*/
 
 .main-navigation a:active {
   	color: #ababab;
@@ -101,9 +102,9 @@ h1 {
 	position: relative;
   	display: inline-block;
   	vertical-align: top;
-  	padding-top: 75px;
-  	padding-bottom: 28px;
-  	padding-left: 80px;	
+  	margin-top: 75px;
+  	margin-bottom: 28px;
+  	margin-left: 80px;	
   	list-style: none;
   	line-height: 30px;
   	color: #000000;
@@ -114,10 +115,6 @@ h1 {
 .main-basket .basket:hover {
   	color: #fb565a;
 }
-
-/*.main-basket .basket:visited {
-  	text-decoration: underline;
-}*/
 
 .main-basket .basket:active {
   	color: #ababab;
@@ -140,7 +137,7 @@ h1 {
   	font-weight: normal;
   	font-size: 16px;
   	line-height: 18px;
-  	font-family: "Roboto Medium";
+  	font-family: "Roboto Medium", "Arial", sans-serif;
   	vertical-align: top;
   	text-align: center;
   	color: #ffffff;
@@ -156,6 +153,13 @@ h1 {
   	background-color: #e74246;
 }
 
+.btn:active span{
+	opacity: 0.2;
+}
+
+.btn:active {
+	background-color: #d7373b; 
+}
 /*index.html*/
 
 .news {
@@ -277,7 +281,7 @@ h1 {
 }
 
 .percent p {
-	font-family: "Roboto Regular";
+	font-family: "Roboto Regular", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 }
@@ -294,7 +298,10 @@ h1 {
 	text-align: center;
 }
 
+.partners-item img:first-child:hover {
 
+	background-image: url("img/logo-1-hover.png");
+}
 
 .services-item:nth-child(2) .btn {
 	background-color: #00ca74;
@@ -314,9 +321,9 @@ h1 {
 
 /*inner.html*/
 
-.main-navigation .shops {
-  	text-decoration: underline;
-	color: #fb565a;
+.main-navigation .shops1 {
+	border-bottom: 2px solid #fb565a;
+	padding-bottom: 2px;
 }
 
 
@@ -428,13 +435,6 @@ h1 {
 	margin-right: 0;
 }
 
-.layout-item .image {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 2;
-}
-
 .layout-item .info-item {
 	position: absolute;
 	top: 346px;
@@ -443,7 +443,7 @@ h1 {
 	text-align: center;
 	background: #eeeeee;
 	z-index: 1;
-	/*visibility: hidden;*/
+	display: none;
 }
 
 .layout-item .name-layout {
@@ -464,13 +464,9 @@ h1 {
 	padding: 20px 62px;
 }
 
-.layout-item .image:hover {
-	z-index: 0;
+.layout-item:hover .info-item {
+	display: block;
 }
-
-/*.layout-item .info-item:hover {
-	visibility: visible;
-}*/
 
 /* страницы*/
 .pages {
