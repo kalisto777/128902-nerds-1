@@ -15,7 +15,7 @@ h1 {
 
 /*общие свойства*/
 
-.main-header .container {
+.wrapper {
 	width: 1160px;
 	margin: 0 auto;
 }
@@ -390,12 +390,18 @@ h1 {
 .partners-item {
 	display: inline-block;
 	width: 260px;
-	margin-right: 20px;
-	margin-left: 20px;
+	min-height: 90px;
+	margin-right: 18px;
+	margin-left: 18px;
 	text-align: center;
 	position: relative;
 	vertical-align: middle;
 }
+
+.partners-item:last-child {
+	margin-right: 0;
+}
+
 .partners-item:first-child img {
 	width: 199px;
 	height: 68px;
@@ -404,7 +410,7 @@ h1 {
 
 .partners-item:nth-child(2) img {
 	width: 209px;
-	height: 90x;
+	height: 90px;
 	opacity: 0.2;
 }
 
@@ -428,7 +434,7 @@ h1 {
   	opacity: 0.1;
 }
 
-.partners-item::after {
+.partners-item::before {
 	content: "";
 	display: block;
 	position: absolute;
@@ -437,6 +443,11 @@ h1 {
 	background-color: #eeeeee;
 	right: 0;
 	top: 0;
+}
+
+.partners .wrapper {
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
 }
 
 /*inner.html*/
@@ -507,10 +518,9 @@ input[type="radio"] + label::before {
 	width: 25px;
     height: 25px;
     background-position: -10px -214px;
-	background-image: url(""../img/sprite.png"");
+	background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
 	position: absolute;
-	background-color: #000000;
 	top: 0;
 	left: 0;
 }
@@ -520,12 +530,11 @@ input[type="radio"]:checked + label::after {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-image: url(""../img/sprite.png"");
+	background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     width: 25px;
     height: 25px;
     background-position: -10px -259px;
-    background-color: red;
 }
 
 input[type="checkbox"] {
@@ -545,10 +554,9 @@ input[type="checkbox"] + label::before {
 	width: 23px;
     height: 23px;
     background-position: -10px -45px;
-	background-image: url(""../img/sprite.png"");
+	background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
 	position: absolute;
-	background-color: #000000;
 	top: 0;
 	left: 0;
 }
@@ -558,12 +566,11 @@ input[type="checkbox"]:checked + label::after {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-image: url(""../img/sprite.png"");
+	background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     width: 27px;
     height: 23px;
     background-position: -10px -88px;
-    background-color: red;
 }
 
 .search p,
