@@ -124,12 +124,13 @@ h1 {
 .basket::before {
   	content: "";
   	position: absolute;
-  	top: 81px;
-  	left: 45px;
+  	top: 6px;
+  	left: -45px;
   	width: 15px;
   	height: 15px;
-  	background-color: red;
-  	opacity: 1;
+    background-position: -10px -10px;
+  	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
 }
 
 .btn {
@@ -162,16 +163,10 @@ h1 {
 	background-color: #d7373b; 
 }
 
-.line {
-	background-color: #eeeeee;
-	width: 100%;
-	height: 2px;
-}
-
 /*спрайт*/
 
 .sprite {
-    background-image: url(""../img/sprite.png"");
+    background-image: url(sprite.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -194,35 +189,62 @@ h1 {
     background-position: -10px -88px;
 }
 
+.sprite-exit {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -131px;
+}
+
 .sprite-fb-icon {
     width: 12px;
     height: 22px;
-    background-position: -10px -131px;
+    background-position: -10px -172px;
+}
+
+.sprite-fb-icon-active {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -214px;
 }
 
 .sprite-insta-icon {
     width: 21px;
     height: 21px;
-    background-position: -10px -173px;
+    background-position: -10px -256px;
+}
+
+.sprite-insta-icon-active {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -297px;
 }
 
 .sprite-radio-off {
     width: 25px;
     height: 25px;
-    background-position: -10px -214px;
+    background-position: -10px -338px;
 }
 
 .sprite-radio-on {
     width: 25px;
     height: 25px;
-    background-position: -10px -259px;
+    background-position: -10px -383px;
 }
 
 .sprite-vk-icon {
     width: 26px;
     height: 15px;
-    background-position: -10px -304px;
+    background-position: -10px -428px;
 }
+
+.sprite-vk-icon-active {
+    width: 26px;
+    height: 15px;
+    background-position: -10px -463px;
+}
+
+
+
 
 /*index.html*/
 
@@ -248,7 +270,7 @@ h1 {
 }
 
 .services {
-  	margin-bottom: 81px;
+  	margin-bottom: 80px;
   	padding-left: 20px;
   	padding-right: 20px;
 }
@@ -292,8 +314,12 @@ h1 {
 
 .about-us {
 	padding-left: 20px;
-	margin-bottom: 75px;
-	margin-top: 41px;
+	margin-bottom: 75px;	
+}
+
+.about-us .wrapper {
+	border-top: 2px solid #eeeeee;
+	padding-top: 40px;
 }
 
 .who-are-we {
@@ -391,8 +417,8 @@ h1 {
 	display: inline-block;
 	width: 260px;
 	min-height: 90px;
+	padding-top: 45px;
 	margin-right: 18px;
-	margin-left: 18px;
 	text-align: center;
 	position: relative;
 	vertical-align: middle;
@@ -424,6 +450,7 @@ h1 {
 	width: 173px;
 	height: 84px;
 	opacity: 0.2;
+	content: none;
 }
 
 .partners-item img:hover {
@@ -442,10 +469,11 @@ h1 {
 	height: 52px;
 	background-color: #eeeeee;
 	right: 0;
-	top: 0;
+	top: 63px;
 }
 
 .partners .wrapper {
+	min-height: 180px;
 	border-top: 2px solid #eeeeee;
 	border-bottom: 2px solid #eeeeee;
 }
@@ -485,8 +513,6 @@ h1 {
 .search {
 	float: left;
 	width: 260px;
-	padding-left: 20px;
-  	padding-right: 20px;
 }
  .search-price {
  	margin-bottom: 56px;
@@ -517,7 +543,7 @@ input[type="radio"] + label::before {
 	content: "";
 	width: 25px;
     height: 25px;
-    background-position: -10px -214px;
+    background-position: -10px -338px;
 	background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
 	position: absolute;
@@ -534,7 +560,7 @@ input[type="radio"]:checked + label::after {
     background-repeat: no-repeat;
     width: 25px;
     height: 25px;
-    background-position: -10px -259px;
+    background-position: -10px -383px;
 }
 
 input[type="checkbox"] {
@@ -588,12 +614,28 @@ input[type="checkbox"]:checked + label::after {
   	line-height: 20px;
 }
 
-.sorting {
+/* кнопка формы */
+
+.search-features .btn {
+  	padding-top: 16px;
+  	padding-bottom: 16px;
+  	padding-right: 85px;
+  	padding-left: 90px;
+	font-weight: bold;
+  	background-color: #eeeeee;
+}
+
+/*сортировка*/
+.assortment {
 	float: right;
 	width: 760px;
 }
 
-/*сортировка*/
+.sorting {
+	float: right;
+	width: 760px;
+} 
+
 .sort {
 	float: left;
 	margin-right: 40px;
@@ -642,6 +684,7 @@ input[type="checkbox"]:checked + label::after {
 }
 .by-top {
 	opacity: 0.3;
+	padding-left: 20px;
 }
 
 .layout {
@@ -818,26 +861,43 @@ input[type="checkbox"]:checked + label::after {
   	background-color: #e74246;
 }
 
-.social-btn:active {
+.social-btn-vk:active::before {
+  	background-color: #d7373b;
+  	width: 26px;
+    height: 15px;
+    background-position: -10px -463px; 
+}
+
+.social-btn-fb:active::before {
+	width: 12px;
+    height: 22px;
+    background-position: -10px -214px;
+  	background-color: #d7373b; 
+}
+
+.social-btn-inst:active::before {
+	width: 21px;
+    height: 21px;
+    background-position: -10px -297px;
   	background-color: #d7373b; 
 }
 
 .social-btn-vk::before {
 	width: 26px;
     height: 15px;
-    background-position: -10px -304px;
+    background-position: -10px -428px;
 }
 
 .social-btn-fb::before {
 	width: 12px;
     height: 22px;
-    background-position: -10px -131px;
+    background-position: -10px -172px;
 }
 
 .social-btn-inst::before {
  	width: 21px;
     height: 21px;
-    background-position: -10px -173px;
+    background-position: -10px -256px;
 }
 
 .footer-benefit {
@@ -859,3 +919,27 @@ input[type="checkbox"]:checked + label::after {
   	margin: 0;
   	padding-top: 10px;
 }
+
+/* дополнительный слой с формой на первой странице*/
+
+/*.write-to-use {
+	position: absolute;
+	top: -135px;
+	left: 240px;
+	width: 960px;
+	height: 590px;
+	color: #000000; 
+	background-color: #eeeeee;
+}
+
+.write-to-use .first-name {
+	float: left;
+}
+
+.write-to-use .email-adress {
+	float: right;
+}
+*/
+/*.write-to-use .message {
+	float: left;
+}*/
