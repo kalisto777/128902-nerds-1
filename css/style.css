@@ -920,26 +920,110 @@ input[type="checkbox"]:checked + label::after {
   	padding-top: 10px;
 }
 
-/* дополнительный слой с формой на первой странице*/
+/* Всплывающая форма */
 
-/*.write-to-use {
+.modal-content {
+  position: absolute;
+  top: 1660px;
+  left: 50%;
+  width: 960px;
+  margin-left: -550px;
+  padding-top: 70px;
+  padding-left: 100px;
+  padding-right: 80px;
+  padding-bottom: 85px;
+  color: #000000;
+  background: #ffffff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+ }
+
+.modal-content-close {
 	position: absolute;
-	top: -135px;
-	left: 240px;
-	width: 960px;
-	height: 590px;
-	color: #000000; 
-	background-color: #eeeeee;
+  	top: 75px;
+  	right: 80px;
+  	width: 22px;
+  	height: 22px;
+  	font-size: 0;
+  	border: 0;
+  	cursor: pointer;
 }
 
-.write-to-use .first-name {
+.modal-content-close::before {
+  	content: "";
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+ 	width: 21px;
+    height: 21px;
+    background-position: -10px -131px;
+    background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	opacity: 0.3;
+}
+
+.modal-content-close:hover::before {
+	opacity: 1;
+}
+
+.modal-content-close:active::before {
+	opacity: 0.1;
+}
+
+.modal-content h2 {
+  margin: 0;
+  margin-bottom: 45px;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.write-to-use input[type="text"],
+.write-to-use input[type="email"],
+.write-to-use textarea {
+  width: 360px;
+  padding: 17px 20px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Roboto Regular", "Arial", sans-serif;
+  color: #d7dcde;
+  background-color: #ffffff;
+  border: 2px solid #eeeeee;
+}
+
+.write-to-use input:hover,
+.write-to-use textarea:hover {
+  border-color: #b4b9bb;
+  color: #b4b9bb;
+}
+
+.write-to-use input:focus, 
+.write-to-use textarea:focus {
+  border-color: #000000;
+  color: #000000;
+  outline: none;
+}
+
+.write-to-use .container {
+	margin-bottom: 35px;
+}
+
+.write-to-use  .first-name {
 	float: left;
 }
 
-.write-to-use .email-adress {
+.write-to-use  .email-adress {
 	float: right;
 }
-*/
-/*.write-to-use .message {
-	float: left;
-}*/
+.write-to-use  label {
+	font-size: 16px;
+  	line-height: 18px;
+  	font-family: "Roboto", "Arial", sans-serif;
+  	font-weight: bold;
+}
+
+.write-to-use textarea {
+	margin-bottom: 48px;
+}
+
+.write-to-use .btn {
+	padding: 18px 80px;
+}

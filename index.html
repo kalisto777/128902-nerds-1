@@ -147,24 +147,6 @@
 						<p class="number">тел. +7 (812) 275-75-75</p>
 						<a class="btn" href="#"><span>Напишите нам</span></a>
 					</div>
-					<!-- <div class="write-to-use clearfix">
-						<h1>Напишите нам</h1>
-						<form action="https://echo.htmlacademy.ru" method="get">
-							<div class="first-name">
-								<label for="name-field">Ваше имя:</label>
-								<input type="text" name="name" id="name-field" value="Представтесь, пожалуйста">
-							</div>
-							<div class="email-adress">
-								<label for="mail-field">Ваш e-mail:</label>
-								<input type="email" name="mail" id="mail-field" value="Для отправки ответа">
-							</div>
-							<div class="message">
-								<label for="text-mail-field">Ваш e-mail:</label>
-								<textarea name="textarea" id="text-mail-field" cols="40" rows="5">В свободной форме</textarea>
-							</div> 
-							<button type="submit" value="show">Отправить</button>
-						</form>
-					</div> -->
 				</div>
 				<section class="footer-social">
 	          		<a class="social-btn social-btn-vk" href="#">VK</a>
@@ -177,5 +159,26 @@
 	        	</section>
 	        </div>
 		</footer>
+		<div class="modal-content">
+      		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      		<h2 class="modal-content-title">Напишите нам</h2>
+			<form class= "write-to-use" action="https://echo.htmlacademy.ru" method="get">
+				<div class="container clearfix">
+					<div class="first-name">
+						<label for="name-field">Ваше имя:</label><br>
+						<input type="text" name="name" id="name-field" value="Представтесь, пожалуйста">
+					</div>
+					<div class="email-adress">
+						<label for="mail-field">Ваш e-mail:</label><br>
+						<input type="email" name="mail" id="mail-field" value="Для отправки ответа">
+					</div>
+				</div>
+				<div class="message">
+						<label for="text-mail-field">Текст письма:</label><br>
+						<textarea name="textarea" id="text-mail-field" cols="60" rows="5">В свободной форме</textarea>
+					</div> 
+				<button class="btn" type="submit" value="show">Отправить</button>
+			</form>
+      	</div>
 	</body>
 </html>
