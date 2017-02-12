@@ -441,7 +441,6 @@ h1 {
 .interest {
 	float: right;
 	width: 360px;
-/*  	padding-right: 20px;*/
 }
 
 .interest .logo {
@@ -847,6 +846,30 @@ input[type="checkbox"]:checked + label::after {
 .layout-item:nth-child(4),
 .layout-item:nth-child(6) {
 	margin-right: 0;
+}
+
+.layout-item .task-bar {
+	width: 356px;
+	height: 40px;
+	border: 2px solid #eeeeee;
+	border-radius: 2px;
+	background-color: #eeeeee;
+}
+
+.task-bar .layout-controls i{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 14px 4px;
+    background: white;
+    border: 3px solid white;
+    vertical-align: top;
+    border-radius: 50%;
+/*    cursor: pointer;*/
+}
+
+.task-bar .layout-controls i:first-child {
+	margin-left: 15px;
 }
 
 .layout-item .info-item {
