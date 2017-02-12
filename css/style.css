@@ -302,6 +302,7 @@ h1 {
     line-height: 1;
     font-weight: bold;
     color: black;
+    width: 540px;
 }
 
 .slide .btn {
@@ -311,17 +312,17 @@ h1 {
 .slide:nth-child(1){
     background-image: url("../img/slider-1.png");
     background-repeat: no-repeat;
-    background-position: 100% 10px;
+    background-position: 420px 0;
 }
 .slide:nth-child(2){
     background-image: url("../img/slider-2.png");
     background-repeat: no-repeat;
-    background-position: 100% 10px;
+    background-position: 500px 0;
 }
 .slide:nth-child(3){
     background-image: url("../img/slider-3.png");
     background-repeat: no-repeat;
-    background-position: 100% 0;
+    background-position: 420px 0;
 }
 .slide{
     display: none;
@@ -874,7 +875,7 @@ input[type="checkbox"]:checked + label::after {
 
 .layout-item .info-item {
 	position: absolute;
-	top: 346px;
+	top: 386px;
 	width: 360px;
 	min-height: 232px;
 	text-align: center;
@@ -1085,12 +1086,12 @@ input[type="checkbox"]:checked + label::after {
 .modal-content {
   position: absolute;
   top: 1660px;
-  left: 50%;
-  width: 960px;
-  margin-left: -550px;
+  left: 120px;
+  width: 760px;
+  height: 435px;
   padding-top: 70px;
   padding-left: 100px;
-  padding-right: 80px;
+  padding-right: 100px;
   padding-bottom: 85px;
   color: #000000;
   background: #ffffff;
@@ -1106,6 +1107,8 @@ input[type="checkbox"]:checked + label::after {
   	font-size: 0;
   	border: 0;
   	cursor: pointer;
+  	background: transparent;
+  	outline: none;
 }
 
 .modal-content-close::before {
@@ -1137,10 +1140,12 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .write-to-use input[type="text"],
-.write-to-use input[type="email"],
-.write-to-use textarea {
-  	width: 360px;
-  	padding: 17px 20px;
+.write-to-use input[type="email"] {
+  	width: 336px;
+  	padding-top: 17px;
+  	padding-bottom: 17px;
+  	padding-left: 20px;
+  	padding-right: 0;
   	font-size: 16px;
   	line-height: 18px;
   	font-family: "Roboto Regular", "Arial", sans-serif;
@@ -1168,10 +1173,12 @@ input[type="checkbox"]:checked + label::after {
 
 .write-to-use  .first-name {
 	float: left;
+	  	margin: 0;
 }
 
 .write-to-use  .email-adress {
 	float: right;
+
 }
 .write-to-use  label {
 	font-size: 16px;
@@ -1181,10 +1188,22 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .write-to-use textarea {
-	margin-bottom: 48px;
-	width: 760px;
+	margin-bottom: 45px;
+	width: 736px;
+	min-height: 103px;
+	padding-top: 12px;
+  	padding-left: 20px;
+  	padding-bottom: 0;
+  	padding-right: 0;
+  	font-size: 16px;
+  	line-height: 18px;
+  	font-family: "Roboto Regular", "Arial", sans-serif;
+  	color: #d7dcde;
+  	background-color: #ffffff;
+  	border: 2px solid #eeeeee;
 }
 
 .write-to-use .btn {
 	padding: 18px 80px;
+
 }
