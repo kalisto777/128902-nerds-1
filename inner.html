@@ -11,7 +11,7 @@
 		<header class="main-header clearfix">
 			<div class="wrapper">
  				<div class="main-logo">
-					<img src="img/nerds-logo.png" width="160" height="65">
+					<img src="img/nerds-logo.png" width="160" height="65" alt="Nerd'S">
 				</div>
 				<nav class="main-navigation">
 					<ul class="main-list">
@@ -40,15 +40,21 @@
 			</div>
 			<div class="wrapper">
 				<div class="search clearfix">
-					<form action="https://echo.htmlacademy.ru" method="get">
-						<div class="search-price">
-							<p>Стоимость:</p>
-							<input type="range" multiple><br>
-							<lebel for="cost-from">от</lebel>
-							<input type="text" id="cost-from" name="from">	
-							<lebel for="cost-before" name="before">до</lebel>
-							<input type="text" id="cost-before" name="before">
-						</div>
+					<form action="form.php" method="GET">
+  						<div class="range-filter">
+  							<p>Стоимость:<p>
+        					<div class="range-controls">
+            					<div class="scale">
+            					<div class="bar" style="width: 60%"></div>
+					          	</div>
+					          	<div class="toggle toggle-min"></div>
+      							<div class="toggle toggle-max"></div>
+    						</div>
+    						<div class="price-controls">
+        						<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+      							<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+							</div>
+  						</div>
 						<div class="search-grid">
 							<p>Сетка:</p>
 							<div class="net-item">
@@ -108,7 +114,7 @@
 					<div class="layout clearfix">
 						<div class="layout-item">
 							<div class="image">
-								<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+								<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona" >
 							</div>
 							<div class="info-item">
 								<p class="name-layout">Sedona</p>
@@ -180,7 +186,7 @@
 			<div class="wrapper">
 				<div class="footer-map">
 					<div class="checkbox">
-						<img src="img/map-marker.png" width="231" height="190">
+						<img src="img/map-marker.png" width="231" height="190" alt="Nerd'S">
 					</div>
 					<div class="map-contact">
 						<p class="name">Nerds design studio</p>
