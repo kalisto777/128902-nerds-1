@@ -583,7 +583,7 @@ h1 {
 /*фильтр*/
 
 .range-filter {
-  width: 240px;
+  width: 260px;
 }
 
 .range-controls {
@@ -758,13 +758,27 @@ input[type="checkbox"]:checked + label::after {
 
 /* кнопка формы */
 
-.search-features .btn {
+.filter-sort .btn {
+	width: 260px;
   	padding-top: 16px;
   	padding-bottom: 16px;
-  	padding-right: 85px;
-  	padding-left: 90px;
+  	text-align: center;
 	font-weight: bold;
+	color: #000000;
   	background-color: #eeeeee;
+  	outline: none;
+}
+
+.filter-sort .btn:hover {
+	background-color: #dfdfdf
+}
+
+.filter-sort .btn:active {
+	background-color: #d5d5d5;
+}
+
+.filter-sort span:active {
+	opacity: 0.3;
 }
 
 /*сортировка*/
