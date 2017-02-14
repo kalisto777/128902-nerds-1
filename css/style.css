@@ -8,11 +8,6 @@
 	background-color: #ffffff;
 }
 
-h1 {
-	font-size: 55px;
-	line-height: 55px;
-}
-
 /*общие свойства*/
 
 .wrapper {
@@ -59,6 +54,7 @@ h1 {
   	float: left;
   	width: 660px;
   	text-transform: uppercase;
+  	-ms-text-transform: uppercase;
 }
 
 .main-navigation ul{
@@ -109,6 +105,7 @@ h1 {
   	color: #000000;
 	text-decoration: none;
 	text-transform: uppercase;
+	-ms-text-transform: uppercase;
 }
 
 .main-basket .basket:hover {
@@ -147,6 +144,7 @@ h1 {
   	border: none;
   	border-radius: 2px;
   	cursor: pointer;
+  	-ms-text-transform: uppercase;
 }
 
 .btn:hover {
@@ -292,7 +290,7 @@ h1 {
 }
 .slide-text{
     width: 416px;
-    padding: 30px 0;
+    padding-top: 75px;
     color: #283136;
 }
 .slide-title{
@@ -310,17 +308,17 @@ h1 {
 .slide:nth-child(1){
     background-image: url("../img/slider-1.png");
     background-repeat: no-repeat;
-    background-position: 420px 0;
+    background-position: 85% 0%;
 }
 .slide:nth-child(2){
     background-image: url("../img/slider-2.png");
     background-repeat: no-repeat;
-    background-position: 500px 0;
+    background-position: 85% 0;
 }
 .slide:nth-child(3){
     background-image: url("../img/slider-3.png");
     background-repeat: no-repeat;
-    background-position: 420px 0;
+    background-position: 85% 0;
 }
 .slide{
     display: none;
@@ -354,6 +352,7 @@ h1 {
 	font-size: 24px;
 	line-height: 30px;
 	text-transform: uppercase;
+	-ms-text-transform: uppercase;
 }
 
 .services-description p {
@@ -391,7 +390,7 @@ h1 {
 	width: 700px;
 }
  
-.who-are-we p b {
+.who-are-we b {
 	display: block;
 	font-size: 45px;
 	line-height: 45px;
@@ -413,6 +412,7 @@ h1 {
 	text-transform: uppercase;
 	margin-bottom: 29px;
 	font-weight: bold;
+	-ms-text-transform: uppercase;
 }
 
 .design ul {
@@ -453,6 +453,7 @@ h1 {
 	margin-top: 36px;
 	margin-bottom: 45px;
 	font-weight: bold;
+	-ms-text-transform: uppercase;
 }
 
 .percent {
@@ -570,6 +571,7 @@ h1 {
 	text-align: center;
 	font-size: 55px;
 	line-height: 241px;
+	vertical-align: middle;
 }
 
 /*поиск*/
@@ -745,6 +747,7 @@ input[type="checkbox"]:checked + label::after {
   	line-height: 30px;
   	text-transform: uppercase;
   	font-weight: bold;
+  	-ms-text-transform: uppercase;
 }
 
 .search .net-item,
@@ -799,6 +802,7 @@ input[type="checkbox"]:checked + label::after {
   	line-height: 18px;
 	text-transform: uppercase;
 	font-weight: bold;
+	-ms-text-transform: uppercase;
 }
 
 .sorting-options {
@@ -818,6 +822,7 @@ input[type="checkbox"]:checked + label::after {
 	font-size: 14px;
   	line-height: 18px;
 	vertical-align: top;
+	-ms-text-transform: uppercase;
 }
 
 .sorting-options a {
@@ -869,7 +874,7 @@ input[type="checkbox"]:checked + label::after {
 	background-color: #eeeeee;
 }
 
-.task-bar .layout-controls i{
+.task-bar i{
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -878,10 +883,9 @@ input[type="checkbox"]:checked + label::after {
     border: 3px solid white;
     vertical-align: top;
     border-radius: 50%;
-/*    cursor: pointer;*/
 }
 
-.task-bar .layout-controls i:first-child {
+.task-bar i:first-child {
 	margin-left: 15px;
 }
 
@@ -902,6 +906,7 @@ input[type="checkbox"]:checked + label::after {
   	line-height: 30px;
   	font-weight: bold;
 	text-transform: uppercase;
+	-ms-text-transform: uppercase;
 }
 
 .layout-item .info-layout{
@@ -940,6 +945,7 @@ input[type="checkbox"]:checked + label::after {
     background: #eeeeee;
     border: 3px solid #eeeeee;
     border-radius: 3px;
+    -ms-text-transform: uppercase;
 }
 
 .pages a:first-child {
@@ -964,8 +970,6 @@ input[type="checkbox"]:checked + label::after {
 	width: 1440px;
 	height: 416px;
 	margin-bottom: 70px;
-	background-size: 100%;
-	background: #eeeeee url("../img/map.png") no-repeat center top;
 }
 
 .checkbox {
@@ -985,6 +989,7 @@ input[type="checkbox"]:checked + label::after {
 	padding-left: 44px;
 	color: #000000;
 	background-color: #ffffff;
+	z-index: 100;
 }
 
 .map-contact .name {
@@ -993,6 +998,7 @@ input[type="checkbox"]:checked + label::after {
   	font-weight: bold;
   	padding-top: 50px;
 	text-transform: uppercase;
+	-ms-text-transform: uppercase;
 }
 
 .map-contact .adress,
@@ -1028,6 +1034,7 @@ input[type="checkbox"]:checked + label::after {
 	transform: translate(-50%, -50%);
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
+	-ms-transform: translate(-50%, -50%);
 }
 
 .social-btn:hover {
@@ -1098,34 +1105,43 @@ input[type="checkbox"]:checked + label::after {
 @keyframes bounce {
   0%   {
     transform: translateY(-2000px);
+    -ms-transform: translateY(-2000px);
   }
   70%  {
     transform: translateY(30px);
+    -ms-transform: translateY(30px);
   }
   90%  {
     transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
   }
   100% {
     transform: translateY(0);
+    -ms-transform: translateY(0);
   }
 }
 
 @keyframes shake {
   0%, 100% {
     transform: translateX(0);
+    -ms-transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
     transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
     transform: translateX(10px);
+    -ms-transform: translateX(10px);
   }
 }
 
 .modal-content {
-  	position: absolute;
-  	top: 1660px;
-  	left: 120px;
+  	position: fixed;
+  	top: 50%;
+  	margin-top: -295px;
+  	left: 50%;
+  	margin-left: -480px;
   	width: 760px;
   	height: 435px;
   	padding-top: 70px;
@@ -1183,6 +1199,7 @@ input[type="checkbox"]:checked + label::after {
 .modal-content-show {
   	display: block;
    	animation: bounce 0.6s;
+   	z-index: 200;
 }
 
 .modal-error {

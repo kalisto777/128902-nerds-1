@@ -153,7 +153,7 @@
 			</div>
 			<div class="partners">
 				<div class="wrapper">
-					<a class="partners-item" href="https://htmlacademy.ru"><img src="img/logo-1-hover.png" width="199" height="68" alr="HTMLAcademy"> </a>
+					<a class="partners-item" href="https://htmlacademy.ru"><img src="img/logo-1-hover.png" width="199" height="68" alt=""> </a>
 					<a class="partners-item" href="#"><img src="img/logo-2-hover.png" width="209" height="90" alt="Barbershop"></a>
 					<a class="partners-item" href="#"><img src="img/logo-3-hover.png" width="185" height="52" alt="Pink"></a>
 					<a class="partners-item" href="#"><img src="img/logo-4-hover.png" width="173" height="84" alt="Mishka"></a>
@@ -162,10 +162,7 @@
 		</main>
 		<footer class="main-footer clearfix">
 			<div class="wrapper">
-				<div class="footer-map">
-					<div class="checkbox">
-						<img src="img/map-marker.png" width="231" height="190" alt="Nerd'S">
-					</div>
+				<div id="map" class="footer-map">
 					<div class="map-contact">
 						<p class="name">Nerds design studio</p>
 						<p class="address">
@@ -186,7 +183,7 @@
 	        	</section>
 	        </div>
 		</footer>
-		<div class="modal-content modal-content-show">
+		<div class="modal-content">
       		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       		<h2 class="modal-content-title">Напишите нам</h2>
 			<form class= "write-to-use" action="https://echo.htmlacademy.ru" method="get">
@@ -207,6 +204,7 @@
 				<button class="btn" type="submit" value="show"><span>Отправить</span></button>
 			</form>
       	</div>
-      	<script type="js/popup.js"></script>
+      	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+      	<script src="js/popup.js"></script>
 	</body>
 </html>
