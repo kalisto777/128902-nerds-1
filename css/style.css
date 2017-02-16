@@ -1277,7 +1277,6 @@ input[type="checkbox"]:checked + label::after {
   	padding-right: 0;
   	font-size: 16px;
   	line-height: 18px;
-  	font-family: "Roboto Regular", "Arial", sans-serif;
   	color: #d7dcde;
   	background-color: #ffffff;
   	border: 2px solid #eeeeee;
@@ -1293,6 +1292,12 @@ input[type="checkbox"]:checked + label::after {
 .write-to-use textarea:focus {
   	border-color: #000000;
   	color: #000000;
+  	outline: none;
+}
+
+.write-to-use input:invalid {
+  	border-color: #e74246;
+  	color: #e74246;
   	outline: none;
 }
 
