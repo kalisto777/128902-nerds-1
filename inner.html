@@ -45,8 +45,8 @@
   							<p>Стоимость:<p>
         					<div class="range-controls">
             					<div class="scale">
-            					<div class="bar" style="width: 60%"></div>
-					          	</div>
+            						<div class="bar" style="width: 70%"></div>
+					         	</div>
 					          	<div class="toggle toggle-min"></div>
       							<div class="toggle toggle-max"></div>
     						</div>
@@ -91,6 +91,10 @@
 							<ul>
 								<li class="by-price">
 									<a href="#">по цене
+									</a>
+								</li>
+								<li class="by-type">
+									<a href="#">по типу
 									</a>
 								</li>
 								<li class="by-name">
@@ -225,17 +229,14 @@
 		</main>
 		<footer class="main-footer clearfix">
 			<div class="wrapper">
-				<div class="footer-map">
-					<div class="checkbox">
-						<img src="img/map-marker.png" width="231" height="190" alt="Nerd'S">
-					</div>
+				<div id="map" class="footer-map">
 					<div class="map-contact">
 						<p class="name">Nerds design studio</p>
 						<p class="address">
 						191186, Санкт-Петербург<br>
 						ул. Б. Конюшенная, д. 19/8</p>
 						<p class="number">тел. +7 (812) 275-75-75</p>
-						<a class="btn" href="#"><span>Напишите нам</span></a>
+						<a class="btn write" href="#"><span>Напишите нам</span></a>
 					</div>
 				</div>
 				<section class="footer-social">
@@ -249,5 +250,28 @@
 	        	</section>
 	        </div>
 		</footer>
+		<div class="modal-content">
+      		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      		<h2 class="modal-content-title">Напишите нам</h2>
+			<form class= "write-to-use" action="https://echo.htmlacademy.ru" method="get">
+   				<div class="container clearfix">
+					<div class="first-name">
+						<label for="name-field">Ваше имя:</label><br>
+						<input class="icon-user" type="text" name="name" id="name-field" placeholder="Представтесь, пожалуйста">  
+					</div>
+					<div class="email-adress">
+						<label for="mail-field">Ваш e-mail:</label><br>
+						<input class="icon-email" type="email"  name="mail" id="mail-field" placeholder="Для отправки ответа">
+					</div>
+				</div>
+				<div class="message">
+						<label for="text-mail-field">Текст письма:</label><br>
+						<textarea name="textarea" id="text-mail-field" placeholder="В свободной форме"></textarea>
+				</div> 
+				<button class="btn" type="submit" value="show"><span>Отправить</span></button>
+			</form>
+      	</div>
+      	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+      	<script src="js/popup.js"></script>
 	</body>
 </html>

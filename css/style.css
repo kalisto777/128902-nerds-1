@@ -38,7 +38,6 @@
 	width: 160px;
 	height: 65px;
 	padding-top: 48px;
-/*	padding-bottom: 18px;*/
 	opacity: 1;
 }
 
@@ -254,6 +253,7 @@
     position: absolute;
     opacity: 0;
 }
+
 .slider-controls{
     position: absolute;
     bottom: 95px;
@@ -264,6 +264,7 @@
     text-align: center;
     z-index: 1000;
 }
+
 .slider-controls label{
     display: inline-block;
     width: 12px;
@@ -274,12 +275,22 @@
     vertical-align: top;
     border-radius: 50%;
     cursor: pointer;
+    position: relative;
 }
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] { 
-    background: #c1c1c1;
+#btn-1:checked ~ .slider-controls label[for="btn-1"]:after,
+#btn-2:checked ~ .slider-controls label[for="btn-2"]:after,
+#btn-3:checked ~ .slider-controls label[for="btn-3"]:after { 
+    content: '';
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #c1c1c1;
+    border-radius: 50%;
 }
+
 .slide{
     position: absolute;
     top: 0;
@@ -287,13 +298,14 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-/*    z-index: 100;*/
 }
+
 .slide-text{
     width: 416px;
     padding-top: 70px;
     color: #283136;
 }
+
 .slide-title{
     font-size: 55px;
     line-height: 1;
@@ -315,26 +327,31 @@
     background-repeat: no-repeat;
     background-position: 95% -10px;
 }
+
 .slide:nth-child(2){
     background-image: url("../img/slider-2.png");
     background-repeat: no-repeat;
     background-position: 92% -5px;
-/*    z-index: 100;*/
 }
+
 .slide:nth-child(3){
     background-image: url("../img/slider-3.png");
     background-repeat: no-repeat;
     background-position: 90% 10px;
 }
+
 .slide{
     display: none;
 }
+
 #btn-1:checked ~ .slides .slide:nth-child(1) { 
     display: block;
 }
+
 #btn-2:checked ~ .slides .slide:nth-child(2) { 
     display: block;
 }
+
 #btn-3:checked ~ .slides .slide:nth-child(3) { 
     display: block;
 }
@@ -367,7 +384,6 @@
 	font-size: 16px;
 	line-height: 24px;
 	margin-top: 0;
-
 }
 
 .services-item .btn {
@@ -585,8 +601,7 @@
 }
 
 .templates {
-	min-height: 241px;
-	margin-bottom: 61px;
+	margin-bottom: 40px;
 	color: #000000;
   	background-color: #eeeeee;
 }
@@ -595,8 +610,9 @@
 	margin: 0;
 	text-align: center;
 	font-size: 55px;
-	line-height: 241px;
-	vertical-align: middle;
+	line-height: 55px;
+    min-height: 160px;
+    padding-top: 70px;
 }
 
 /*поиск*/
@@ -608,35 +624,36 @@
 /*фильтр*/
 
 .range-filter {
-  width: 260px;
+  	width: 260px;
 }
 
 .range-controls {
-  position: relative;
-  height: 41px;
-  padding-top: 39px;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  background: #f1f1f1;
+  	position: relative;
+  	height: 41px;
+  	padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    margin-top: 45px;
+  	border-radius: 5px;
+  	background: #f1f1f1;
+  	padding-top: 40px;
 }
 
 .range-controls .scale {
-  height: 2px;
-  background: #d7dcde;
+  	height: 2px;
+  	background: #d7dcde;
 }
 
 .range-controls .bar {
-  width: 70%;
-  height: 2px;
-  background: #00ca74;
+  	width: 70%;
+  	height: 2px;
+  	background: #00ca74;
 }
 
 .range-controls .toggle {
 	position: absolute;
   	top: 30px;
-  	left: 0px;
   	width: 4px;
   	height: 4px;
   	border: 8px solid #fff;
@@ -647,11 +664,11 @@
 }
 
 .range-controls .toggle-min {
-  	left: 0;
+  	left: 20;
 }
 
 .range-controls .toggle-max {
-  	left: 140px;
+  	left: 160px;
 }
 
 .price-controls {
@@ -662,14 +679,13 @@
 	font-size: 16px;
   	display: inline-block;
   	width: 50%;
+  	text-transform: uppercase;
 }
 
 .price-controls input {
 	margin-left: 10px;
 	width: 60px;
-  	padding: 8px 10px;
-  	font-family: "Roboto", "Arial", sans-serif;
-  	font-size: 16px;
+  	padding: 9px 10px;
   	text-align: center;
   	color: #283136;
   	border: none;
@@ -687,10 +703,11 @@
 
 .search-grid{
 	margin-bottom: 44px;
+	margin-top: 55px;
 }
 
 .search-features {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 input[type="radio"] {
@@ -701,7 +718,7 @@ input[type="radio"] + label{
 	display: block;
 	line-height: 20px;
 	padding-left: 35px;
-	margin-bottom: 15px;
+	margin-bottom: 19px;
 	position: relative;
 	cursor: pointer;
 }
@@ -736,7 +753,7 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label{
 	display: block;
-	line-height: 20px;
+	line-height: 16px;
 	padding-left: 35px;
 	position: relative;
 	cursor: pointer;
@@ -816,6 +833,7 @@ input[type="checkbox"]:checked + label::after {
 .sorting {
 	float: right;
 	width: 760px;
+	margin-bottom: 40px;
 } 
 
 .sort {
@@ -843,10 +861,11 @@ input[type="checkbox"]:checked + label::after {
 
 .sorting-options li {
 	display: inline-block;
+	padding-top: 5px;
 	text-transform: uppercase;
 	font-size: 14px;
   	line-height: 18px;
-	vertical-align: top;
+	vertical-align: middle;
 	-ms-text-transform: uppercase;
 }
 
@@ -856,19 +875,24 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .by-price {
-	width: 60px;
-	margin-right: 100px;
+	margin-right: 20px;
 }
 
-.by-name {
-	width: 120px;
-	margin-right: 20px;
+.by-type {
+	margin-right: 25px;
 	text-align: center;
 	opacity: 0.3;
 }
+
+.by-name {
+	margin-right: 45px;
+	text-align: center;
+	opacity: 0.3;
+}
+
 .by-top {
 	opacity: 0.3;
-	padding-left: 20px;
+	padding-left: 13px;
 }
 
 .layout {
@@ -882,7 +906,7 @@ input[type="checkbox"]:checked + label::after {
 	width: 360px;
 	min-height: 576px;
 	margin-right: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .layout-item:nth-child(2),
@@ -892,8 +916,8 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .layout-item .task-bar {
-	width: 356px;
-	height: 40px;
+	width: 355px;
+	height: 35px;
 	border: 2px solid #eeeeee;
 	border-radius: 2px;
 	background-color: #eeeeee;
@@ -901,9 +925,9 @@ input[type="checkbox"]:checked + label::after {
 
 .task-bar i{
     display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 14px 4px;
+    width: 9px;
+    height: 9px;
+    margin: 10px 2px;
     background: white;
     border: 3px solid white;
     vertical-align: top;
@@ -916,7 +940,7 @@ input[type="checkbox"]:checked + label::after {
 
 .layout-item .info-item {
 	position: absolute;
-	top: 386px;
+	top: 382px;
 	width: 360px;
 	min-height: 232px;
 	text-align: center;
@@ -926,7 +950,7 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .layout-item .name-layout {
-	padding-top: 30px;
+	padding-top: 11px;
 	font-size: 18px;
   	line-height: 30px;
   	font-weight: bold;
@@ -937,11 +961,11 @@ input[type="checkbox"]:checked + label::after {
 .layout-item .info-layout{
 	font-size: 16px;
   	line-height: 18px;
+  	margin-bottom: 25px;
 }
 
 .info-item .btn {
-	padding: 0;
-	padding: 20px 62px;
+	padding: 17px 60px;
 }
 
 .layout-item:hover .info-item {
@@ -949,10 +973,11 @@ input[type="checkbox"]:checked + label::after {
 }
 
 /* страницы*/
+
 .pages {
 	float: left;
 	width: 760px;
-	margin-top: 20px;
+	margin-top: 25px;
 	margin-bottom: 60px;
 }
 
@@ -960,7 +985,7 @@ input[type="checkbox"]:checked + label::after {
 	display: inline-block;
 	min-width: 46px;
     height: 46px;
-    margin-right: 11px;
+    margin-right: 5px;
     line-height: 46px;
     text-align: center;
     vertical-align: middle;
@@ -983,7 +1008,7 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .pages a:last-child {
-	width: 260px;
+	width: 255px;
 }
 
 
@@ -991,7 +1016,6 @@ input[type="checkbox"]:checked + label::after {
 
 .footer-map {
 	position: relative;
-/*	left: -140px;*/
 	width: 1200px;
 	height: 416px;
 	margin-left: -20px;
@@ -1278,7 +1302,7 @@ input[type="checkbox"]:checked + label::after {
 
 .write-to-use  .first-name {
 	float: left;
-	  	margin: 0;
+	margin: 0;
 }
 
 .write-to-use  .email-adress {
