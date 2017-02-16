@@ -277,9 +277,9 @@
     cursor: pointer;
     position: relative;
 }
-#btn-1:checked ~ .slider-controls label[for="btn-1"]:after,
-#btn-2:checked ~ .slider-controls label[for="btn-2"]:after,
-#btn-3:checked ~ .slider-controls label[for="btn-3"]:after { 
+.btn-1:checked ~ .slider-controls label[for="btn-1"]:after,
+.btn-2:checked ~ .slider-controls label[for="btn-2"]:after,
+.btn-3:checked ~ .slider-controls label[for="btn-3"]:after { 
     content: '';
 	display: block;
 	position: absolute;
@@ -344,15 +344,15 @@
     display: none;
 }
 
-#btn-1:checked ~ .slides .slide:nth-child(1) { 
+.btn-1:checked ~ .slides .slide:nth-child(1) { 
     display: block;
 }
 
-#btn-2:checked ~ .slides .slide:nth-child(2) { 
+.btn-2:checked ~ .slides .slide:nth-child(2) { 
     display: block;
 }
 
-#btn-3:checked ~ .slides .slide:nth-child(3) { 
+.btn-3:checked ~ .slides .slide:nth-child(3) { 
     display: block;
 }
 
