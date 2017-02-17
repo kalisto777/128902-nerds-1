@@ -1,4 +1,4 @@
- body {
+body {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: normal;
@@ -56,7 +56,7 @@
   	-ms-text-transform: uppercase;
 }
 
-.main-navigation ul{
+.main-navigation ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -254,7 +254,7 @@
     opacity: 0;
 }
 
-.slider-controls{
+.slider-controls {
     position: absolute;
     bottom: 95px;
     left: 50%;
@@ -265,7 +265,7 @@
     z-index: 1000;
 }
 
-.slider-controls label{
+.slider-controls label {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -291,7 +291,7 @@
     border-radius: 50%;
 }
 
-.slide{
+.slide {
     position: absolute;
     top: 0;
     left: 0;
@@ -300,13 +300,13 @@
     overflow: hidden;
 }
 
-.slide-text{
+.slide-text {
     width: 416px;
     padding-top: 70px;
     color: #283136;
 }
 
-.slide-title{
+.slide-title {
     font-size: 55px;
     line-height: 1;
     font-weight: bold;
@@ -322,25 +322,25 @@
 	margin-top: 23px;
 }
 
-.slide:nth-child(1){
+.slide:nth-child(1) {
     background-image: url("../img/slider-1.png");
     background-repeat: no-repeat;
     background-position: 95% -10px;
 }
 
-.slide:nth-child(2){
+.slide:nth-child(2) {
     background-image: url("../img/slider-2.png");
     background-repeat: no-repeat;
     background-position: 92% -5px;
 }
 
-.slide:nth-child(3){
+.slide:nth-child(3) {
     background-image: url("../img/slider-3.png");
     background-repeat: no-repeat;
     background-position: 90% 10px;
 }
 
-.slide{
+.slide {
     display: none;
 }
 
@@ -680,6 +680,7 @@
   	display: inline-block;
   	width: 50%;
   	text-transform: uppercase;
+  	vertical-align: middle;
 }
 
 .price-controls input {
@@ -714,7 +715,7 @@ input[type="radio"] {
 	display: none;
 }
 
-input[type="radio"] + label{
+input[type="radio"] + label {
 	display: block;
 	line-height: 20px;
 	padding-left: 35px;
@@ -733,6 +734,7 @@ input[type="radio"] + label::before {
 	position: absolute;
 	top: 0;
 	left: 0;
+	opacity: 0.4;
 }
 
 input[type="radio"]:checked + label::after {
@@ -745,13 +747,14 @@ input[type="radio"]:checked + label::after {
     width: 25px;
     height: 25px;
     background-position: -10px -383px;
+    opacity: 0.4;
 }
 
 input[type="checkbox"] {
 	display: none;
 }
 
-input[type="checkbox"] + label{
+input[type="checkbox"] + label {
 	display: block;
 	line-height: 16px;
 	padding-left: 35px;
@@ -769,6 +772,7 @@ input[type="checkbox"] + label::before {
 	position: absolute;
 	top: 0;
 	left: 0;
+	opacity: 0.4;
 }
 
 input[type="checkbox"]:checked + label::after {
@@ -781,6 +785,7 @@ input[type="checkbox"]:checked + label::after {
     width: 27px;
     height: 23px;
     background-position: -10px -88px;
+    opacity: 0.4;
 }
 
 .search p,
@@ -853,7 +858,7 @@ input[type="checkbox"]:checked + label::after {
 	width: 360px;
 }
 
-.sorting-options ul{
+.sorting-options ul {
 	padding: 0;
 	list-style: none;
 	line-height: 0;
@@ -919,7 +924,7 @@ input[type="checkbox"]:checked + label::after {
 	width: 355px;
 	height: 35px;
 	border: 2px solid #eeeeee;
-	border-radius: 2px;
+	border-radius: 2px 2px 0 0;
 	background-color: #eeeeee;
 }
 
@@ -936,6 +941,11 @@ input[type="checkbox"]:checked + label::after {
 
 .task-bar i:first-child {
 	margin-left: 15px;
+}
+
+.layout-item:hover .task-bar {
+	background-color: #4d4d4d;
+	border: 2px solid #4d4d4d;
 }
 
 .layout-item .info-item {
@@ -1016,9 +1026,9 @@ input[type="checkbox"]:checked + label::after {
 
 .footer-map {
 	position: relative;
-	width: 1200px;
+	/*width: 1200px;*/
 	height: 416px;
-	margin-left: -20px;
+/*	margin-left: -20px;*/
 	margin-bottom: 65px;
 }
 
@@ -1081,6 +1091,7 @@ input[type="checkbox"]:checked + label::after {
 	background-color: #e1e1e1;
 	position: relative;
 	margin-right: 10px;
+	vertical-align: middle;
 }
 
 .social-btn:last-child {
@@ -1258,6 +1269,7 @@ input[type="checkbox"]:checked + label::after {
 }
 
 /*класс, который добавляется к модальному окну*/
+
 .modal-content-show {
   	display: block;
    	animation: bounce 0.6s;
@@ -1312,8 +1324,8 @@ input[type="checkbox"]:checked + label::after {
 
 .write-to-use  .email-adress {
 	float: right;
-
 }
+
 .write-to-use  label {
 	font-size: 16px;
   	line-height: 18px;
@@ -1339,5 +1351,4 @@ input[type="checkbox"]:checked + label::after {
 
 .write-to-use .btn {
 	padding: 18px 80px;
-
 }
