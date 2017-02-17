@@ -961,7 +961,7 @@ input[type="checkbox"]:disabled:checked + label::after {
 
 .layout-item .task-bar {
 	width: 356px;
-	height: 35px;
+	height: 38px;
 	border: 2px solid #eeeeee;
 	border-radius: 2px 2px 0 0;
 	background-color: #eeeeee;
@@ -991,7 +991,7 @@ input[type="checkbox"]:disabled:checked + label::after {
 
 .layout-item .info-item {
 	position: absolute;
-	top: 382px;
+	top: 384px;
 	width: 360px;
 	min-height: 232px;
 	text-align: center;
