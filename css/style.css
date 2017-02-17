@@ -1026,10 +1026,10 @@ input[type="checkbox"]:checked + label::after {
 
 .footer-map {
 	position: relative;
-	/*width: 1200px;*/
 	height: 416px;
-/*	margin-left: -20px;*/
 	margin-bottom: 65px;
+	background-image: url("../img/map.png");
+	z-index: 0;
 }
 
 .checkbox {
